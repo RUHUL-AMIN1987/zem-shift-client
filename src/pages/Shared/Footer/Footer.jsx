@@ -1,12 +1,13 @@
 import React from 'react';
 import Logo from '../../../components/Logo/Logo';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center bg-primary text-secondary-content p-10">
+        <footer className="footer footer-horizontal footer-center bg-primary text-black-content p-10">
             <aside>
-                <Logo></Logo>
-                <p className="font-bold">
+               <Link> <Logo></Logo></Link>
+                <p className="font-bold mt-5">
                 ACME Industries Ltd.
                 <br />
                 Providing reliable tech since 1992

@@ -1,17 +1,38 @@
 import React from 'react';
 import Logo from '../../../components/Logo/Logo';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import useAuth from '../../../hooks/useAuth';
 
 
 const NavBar = () => {
-    const Links = <>
-                    <li><NavLink to=''>Services</NavLink></li>
-                    <li><NavLink to='/coverage'>Coverage</NavLink></li>
-                    <li><NavLink to=''>About Us</NavLink></li>
-                    <li><NavLink to=''>Pricing</NavLink></li>
-                    <li><NavLink to=''>Blog</NavLink></li>
-                    <li><NavLink to=''>Contact</NavLink></li>
-                  </>
+    const {user, logOut} = useAuth();
+
+    const handelLogOut = () =>{
+        logOut()
+        .then()
+        .catch(error=>{
+            console.log(error)
+        })
+    }
+
+    const Links = (
+                    <>
+                        <li><NavLink to='/'>Services</NavLink></li>
+                        <li><NavLink to='/coverage'>Coverage</NavLink></li>
+                        <li><NavLink to=''>About Us</NavLink></li>
+                        <li><NavLink to='/send-parcel'>Send Parcel</NavLink></li>
+                        <li><NavLink to=''>Blog</NavLink></li>
+                        <li><NavLink to=''>Contact</NavLink></li>
+
+                        {user && (
+                        <li>
+                            <NavLink to='/dashboard/my-parcels'>My Parcels</NavLink>
+                        </li>
+                        )}
+                    </>
+                    );
+
+
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -25,7 +46,7 @@ const NavBar = () => {
                     {Links}
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-xl"><Logo></Logo></a>
+               <Link to={'/'}> <Logo></Logo></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -33,7 +54,15 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+            {
+                 user?<a onClick={handelLogOut} className="btn">Log Out</a> 
+                 :
+                 <Link className='btn' to={'/login'}>Log In</Link>
+            }
+                <Link to="/rider" className="btn btn-primary ml-3 text-black mx-4">
+                    Be A Rider
+                </Link>
+
             </div>
         </div>
     );

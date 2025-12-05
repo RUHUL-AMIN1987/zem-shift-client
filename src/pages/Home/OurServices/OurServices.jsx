@@ -1,40 +1,46 @@
 import React from 'react';
 import img1 from "../../../assets/service.png";
+import img2 from "../../../assets/service.png";
+import img3 from "../../../assets/service.png";
+import img4 from "../../../assets/service.png";
+import img5 from "../../../assets/service.png";
+import img6 from "../../../assets/service.png";
 
 
 const OurServices = () => {
     const services = [
-        {
-            img: img1,
-            title: "Express  & Standard Delivery",
-            desc: "We deliver parcels within 24–72 hours in Dhaka, Chittagong, Sylhet, Khulna, and Rajshahi. Express delivery available in Dhaka within 4–6 hours from pick-up to drop-off."
-        },
-        {
-            img: img1,
-            title: "Nationwide Delivery",
-            desc: "We deliver parcels nationwide with home delivery in every district, ensuring your products reach customers within 48–72 hours."
-        },
-        {
-            img: img1,
-            title: "Fulfillment Solution",
-            desc: "We also offer customized service with inventory management support, online order processing, packaging, and after sales support."
-        },
-        {
-            img: img1,
-            title: "Cash on Home Delivery",
-            desc: "100% cash on delivery anywhere in Bangladesh with guaranteed safety of your product."
-        },
-        {
-            img: img1,
-            title: "Corporate Service / Contract In Logistics",
-            desc: "Customized corporate services which includes warehouse and inventory management support."
-        },
-        {
-            img: img1,
-            title: "Parcel Return",
-            desc: "Through our reverse logistics facility we allow end customers to return or exchange their products with online business merchants."
-        }
-    ];
+            {
+                img: img1,
+                title: "Same-Day Delivery",
+                desc: "Urgent packages delivered within hours, ensuring maximum speed and security."
+            },
+            {
+                img: img2,
+                title: "Next-Day Delivery",
+                desc: "Fast next-day delivery for business and personal shipments."
+            },
+            {
+                img: img3,
+                title: "Cash on Delivery (COD)",
+                desc: "Collect payment from customers and settle securely with merchants."
+            },
+            {
+                img: img4,
+                title: "Real-Time Tracking",
+                desc: "Track your parcel live with instant status updates."
+            },
+            {
+                img: img5,
+                title: "Fragile Parcel Care",
+                desc: "Special handling for electronics, glass items & delicate packages."
+            },
+            {
+                img: img6,
+                title: "Corporate/Bulk Delivery",
+                desc: "Daily pickup, bulk delivery, and business-friendly logistics solutions."
+            }
+        ];
+
 
     return (
         <div className="p-30 rounded-2xl my-10 bg-secondary">

@@ -12,12 +12,10 @@ const Reviews = ({ reviewsPromise }) => {
             <div className='text-center mb-8'>
                 <h1 className='text-3xl font-bold'>Reviews</h1>
                 <p className='max-w-xl mx-auto text-gray-600'>
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Cupiditate cumque qui rerum 
-                    praesentium placeat aut veniam quidem fugiat dolorum et quod, 
-                    reprehenderit, amet expedita unde enim laudantium quam veritatis. 
-                    Praesentium!
+                    Genuine feedback from our valued users. Their experiences reflect our commitment to fast 
+                    delivery, secure handling, and exceptional customer service.
                 </p>
+
             </div>
 
             <Swiper
@@ -34,9 +32,9 @@ const Reviews = ({ reviewsPromise }) => {
                     scale: 0.75,
                     slideShadows: true,
                 }}
-                Autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
+                autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: true,
                 }}
                 pagination={true}
                 modules={[EffectCoverflow, Pagination, Autoplay]}
