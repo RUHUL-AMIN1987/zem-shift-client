@@ -20,7 +20,7 @@ const Coverage = () => {
         }
     }
     return (
-        <div>
+        <div className='mb-5'>
            <h1 className='text-3xl font-bold text-center py-10'>We Are Available In 64 Districts</h1> 
            <div>
                <form onSubmit={handleSearch}>  

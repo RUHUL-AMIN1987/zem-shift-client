@@ -1,10 +1,10 @@
 import React from 'react';
 import img1 from "../../../assets/service.png";
-import img2 from "../../../assets/service.png";
-import img3 from "../../../assets/service.png";
-import img4 from "../../../assets/service.png";
-import img5 from "../../../assets/service.png";
-import img6 from "../../../assets/service.png";
+import img2 from "../../../assets/services1.jpg";
+import img3 from "../../../assets/srvices2.png";
+import img4 from "../../../assets/services3.png";
+import img5 from "../../../assets/services4.jfif";
+import img6 from "../../../assets/services5.jfif";
 
 
 const OurServices = () => {

@@ -14,6 +14,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import PaymentSuccess from "../pages/Dashboard/Payment/PaymentSuccess";
 import PaymentCancelled from "../pages/Dashboard/Payment/PaymentCancelled";
+import OurServices from "../pages/Home/OurServices/OurServices";
+import AboutUs from "../pages/Home/AboutUs/AboutUs";
+import PlaceOrder from "../pages/Home/PlaceOrder/PlaceOrder";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +28,11 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       {
+        path: '/our-services',
+        Component: OurServices
+      },
+
+      {
         path:'/rider',
         element:<PrivateRoutes><Rider></Rider></PrivateRoutes>
       },
@@ -35,8 +43,16 @@ export const router = createBrowserRouter([
       },
       {
         path:'/coverage',
-        element: Coverage,
+        element: <Coverage/>,
         loader: ()=> fetch('/serviceCenters.json').then(res=>res.json())
+      },
+      {
+        path:'/about-us',
+        element: <AboutUs/>
+      },
+      {
+        path:'/place-order',
+        element:<PlaceOrder/>
       }
     ]
   },

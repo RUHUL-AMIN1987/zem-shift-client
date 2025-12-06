@@ -17,9 +17,9 @@ const NavBar = () => {
 
     const Links = (
                     <>
-                        <li><NavLink to='/'>Services</NavLink></li>
+                        <li><NavLink to='/our-services'>Services</NavLink></li>
                         <li><NavLink to='/coverage'>Coverage</NavLink></li>
-                        <li><NavLink to=''>About Us</NavLink></li>
+                        <li><NavLink to='/about-us'>About Us</NavLink></li>
                         <li><NavLink to='/send-parcel'>Send Parcel</NavLink></li>
                         <li><NavLink to=''>Blog</NavLink></li>
                         <li><NavLink to=''>Contact</NavLink></li>
@@ -59,7 +59,7 @@ const NavBar = () => {
                  :
                  <Link className='btn' to={'/login'}>Log In</Link>
             }
-                <Link to="/rider" className="btn btn-primary ml-3 text-black mx-4">
+                <Link to="/rider" className="btn bg-[#d73e19] text-white ml-3 text-black mx-4">
                     Be A Rider
                 </Link>
 
