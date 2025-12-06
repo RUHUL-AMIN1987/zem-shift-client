@@ -41,10 +41,10 @@ const DashboardLayout = () => {
                 <li>
                     <NavLink 
                         className="is-drawer-close:tooltip is-drawer-close:tooltip-right" 
-                        data-tip="MyParcel" to={"/dashboard/my-parcels"}
+                        data-tip="MyParcel" to={"/dashboard/my-assert"}
                     >   
                     <CiDeliveryTruck />
-                        <span className="is-drawer-close:hidden">My Parcel</span>
+                        <span className="is-drawer-close:hidden">My Assert</span>
                         
                     </NavLink>
                 </li>

@@ -8,7 +8,6 @@ import Register from "../pages/Auth/Register/Register";
 import PrivateRoutes from "./PrivateRoutes";
 import Rider from "../pages/Rider/Rider";
 import DashboardLayout from "../layout/DashboardLayout";
-import MyParcel from "../pages/Dashboard/MyParcel/MyParcel";
 import { createBrowserRouter } from "react-router-dom";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import PaymentSuccess from "../pages/Dashboard/Payment/PaymentSuccess";
@@ -17,6 +16,7 @@ import OurServices from "../pages/Home/OurServices/OurServices";
 import AboutUs from "../pages/Home/AboutUs/AboutUs";
 import PlaceOrder from "../pages/Home/PlaceOrder/PlaceOrder";
 import SendAssert from "../pages/SendPercel/SendAssert";
+import MyAssert from "../pages/Dashboard/MyParcel/MyAssert.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -73,8 +73,8 @@ export const router = createBrowserRouter([
       element:<PrivateRoutes><DashboardLayout></DashboardLayout></PrivateRoutes>,
       children:[
         {
-          path: 'my-parcels',
-          Component: MyParcel,
+          path: 'my-assert',
+          Component: MyAssert,
         },
        {
           path: 'payment/:parcelId',

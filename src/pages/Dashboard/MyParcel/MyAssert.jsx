@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 import { Link } from 'react-router';
 
 
-const MyParcel = () => {
+const MyAssert = () => {
     const { user } = useAuth();
     const axiosSecure = useAxiosSecure();
 
@@ -49,7 +49,7 @@ const MyParcel = () => {
 
     return (
         <div>
-            <h2>My Parcel: {parcel.length}</h2>
+            <h2>My Assert: {parcel.length}</h2>
 
             <div className="overflow-x-auto">
                 <table className="table table-zebra">
@@ -102,4 +102,4 @@ const MyParcel = () => {
     );
 };
 
-export default MyParcel;
+export default MyAssert;

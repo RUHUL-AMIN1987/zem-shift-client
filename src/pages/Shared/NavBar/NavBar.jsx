@@ -26,7 +26,7 @@ const NavBar = () => {
 
                         {user && (
                         <li>
-                            <NavLink to='/dashboard/my-parcels'>My Assert</NavLink>
+                            <NavLink to='/dashboard/my-assert'>My Assert</NavLink>
                         </li>
                         )}
                     </>
