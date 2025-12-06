@@ -7,7 +7,6 @@ import Login from "../pages/Auth/Login/Login";
 import Register from "../pages/Auth/Register/Register";
 import PrivateRoutes from "./PrivateRoutes";
 import Rider from "../pages/Rider/Rider";
-import SendParcel from "../pages/SendPercel/SendParcel";
 import DashboardLayout from "../layout/DashboardLayout";
 import MyParcel from "../pages/Dashboard/MyParcel/MyParcel";
 import { createBrowserRouter } from "react-router-dom";
@@ -17,6 +16,7 @@ import PaymentCancelled from "../pages/Dashboard/Payment/PaymentCancelled";
 import OurServices from "../pages/Home/OurServices/OurServices";
 import AboutUs from "../pages/Home/AboutUs/AboutUs";
 import PlaceOrder from "../pages/Home/PlaceOrder/PlaceOrder";
+import SendAssert from "../pages/SendPercel/SendAssert";
 
 export const router = createBrowserRouter([
   {
@@ -37,8 +37,8 @@ export const router = createBrowserRouter([
         element:<PrivateRoutes><Rider></Rider></PrivateRoutes>
       },
       {
-        path:'/send-parcel',
-        element:<PrivateRoutes><SendParcel></SendParcel></PrivateRoutes>,
+        path:'/send-assert',
+        element:<PrivateRoutes><SendAssert></SendAssert></PrivateRoutes>,
         loader: ()=> fetch('/serviceCenters.json').then(res=>res.json())
       },
       {

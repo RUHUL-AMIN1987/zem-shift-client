@@ -191,7 +191,7 @@ import Swal from 'sweetalert2';
 import useAxiosSecure from '../../hooks/useAxiosSecure';
 import useAuth from '../../hooks/useAuth';
 
-const SendParcel = () => {
+const SendAssert = () => {
     const {
             register, 
             handleSubmit, 
@@ -440,4 +440,4 @@ const SendParcel = () => {
     );
 };
 
-export default SendParcel;
+export default SendAssert;
